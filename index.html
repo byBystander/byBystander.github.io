@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>我的文章站</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+</head>
+
+<body>
+        <div class="container">
+                <h1>我的文章库</h1>
+                <button onclick="showEditor()">新建文章</button>
+                <input type="text" id="search" placeholder="搜索文章...">
+                <div id="articleList"></div>
+                <div id="editorPanel" style="display:none;">
+                        <textarea id="editor"></textarea>
+                        <button onclick="saveArticle()">保存</button>
+                </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
